@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title> Макет сайта </title>
+		<style>
+			body{
+				color: #e6e8f1;
+				font: 14px Tahoma, sans-serif;
+				background-color: #fff;
+				border-top: 5px solid #7e7e7e;
+				maring: 0;
+				border-radius: 5px 5px 1px 1px;
+				
+			}
+			input[type="text"]{
+				background-color: #f3f3f3;
+				border: 1px solid #7e7e7e;
+				height: 30px;
+				color: #b2b2b2;
+				padding: 0 10px;
+				vertical-align: top;
+				border-top-left-radius: 3px;
+				border-bottom-left-radius: 3px;
+			}
+			
+			button{
+				color:#fff;
+				border:none;
+				background-color: #29c5e6;
+				height: 32px;
+				font-family: "0swald", sans-serif;
+				margin: 0;	
+				border-top-right-radius: 3px;
+				border-bottom-right-radius: 3px;
+			}
+			
+			form[name="search"]{
+				float: right;
+				margin: 0px;
+			}
+			form[name="search"]::after{
+				clear: both;
+				display: block;
+			}
+			#wrapper{
+				background-color: #e6e8f1;
+				max-width: 960px;
+				padding-bottom: 10px;				
+				marind: auto;
+			}
+		
+			.header{
+				padding: 15px 0;
+				maring: 0px;
+			}
+			
+			nav{
+			}
+			
+			nav a{
+				text-decoration: none;
+			}
+			
+			nav ul {
+				margin-top: 5;
+				padding: 0;
+				background-color: black;
+			}
+			
+			nav li{
+				list-style-position: inside;
+				padding: 10px;
+			}
+			
+			.top-menu {
+				list-style: none;
+				padding: 0;
+				margin:0;
+				text-align: center;
+			}
+			
+			.top-menu li{
+				display: inline-block;
+				margin-right: 10px;
+				padding: 10px, 30px;
+				background: #29c5e6;
+				border-radius: 5px;
+				margin-right: 2;
+			}
+			
+			.top-menu li.active {
+				background: #29c5e6;
+				border-radius: 5px;
+				box-shadow: 0 0 18px -1px #000000;
+			}
+			
+			.top-menu li.active a{
+				color: #fff;
+			}
+			
+			.top-menu a{
+				color: #fff;
+			}
+			
+			
+		</style>
+	</head>
+	
+	<body>
+		
+		
+		<div id="wrapper">
+			<header class="header">
+				<form name="search" action="#" method="get">
+					<input type="text" name="q" placeholder="Поиск"><button type="submit">Искать</button>
+				</form>
+				<div style="clear: both;"></div>
+
+			</header>
+			<nav>
+				<ul class="top-menu">
+					<li class="active"><a herf="#">Домашняя страница</a></li>
+					<li><a herf="#">О нас</a></li>
+					<li><a herf="#">Наши контакты</a></li>
+					<li><a herf="#">Проекты</a></li>
+					<li><a herf="#">Партнёры</a></li>
+				</ul>
+			</nav>
+			<div id="heading"></div>
+			<aside></aside>
+			<section></section>
+		</div>
+		
+		
+		<footer id="footer">
+		</footer>
+	</body>
+	
+	
+	
+</html>
